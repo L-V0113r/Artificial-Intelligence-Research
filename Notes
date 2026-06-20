@@ -125,6 +125,122 @@ Agents:
 
         7)Hierarchical
             structure behaviour into layers such as strategic tactical and operational.
+    
+Problem Solving:
+    Search Algorithms:
+        Used to locate specific items within a collection of data
+    
+        Common Searches:
+            1)Linear Search
+                iterate through the data sequentially to find the data
+            
+            2)Binary Search
+                used on a sorted array , compares the middle element first and then removes the half of the list based on the comparison result
+        
+        Breadth First Search:
+            For graph traversal Breadth first traversal starts on a source node and explores a graph level by level, only going down once each node away from the previous node has been checked for n nodes away from the source
+        
+        Depth First Search:
+            Traverse all adjacent vertices one by once reaching a vertex we finish the traversal of all vertices reachable from that vertex
+        
+        Uniform Cost Search:
+            an uninformed search algorithm used to find the lowest cost path between a start node and a goal node in a weighted graph.it systematically explores paths based on the cumulative cost ,used for cost sensitive pathfinding problems
+
+            Concepts:
+                1)Priority Queue
+                    used to store nodes selecting the node with lowest weight
+                
+                2)Path Cost
+                    Calculates cumulative cost from the start node to the current node,prioritizing nodes with lower costs
+                
+                3)Node Expansion
+                    Explores nodes in order of increasing path cost
+
+                4)Optimal Solution
+                    stops when the goal node is reached through the lowest cost path
+        
+        Bidirectional Search:
+            start search from the source and goal node simultaneously
+        
+        Greedy Best First Search:
+            selects a path that appears most promising at each step.uses heuristic values to guide the search toward the goal efficiently.prioritizes fast exploration over guaranteed optimal solution.
+            
+            Working:
+                Evaluates each node using heuristic values selecting the lowest heuristic value for expansion
+                Expands the most promising path instead of exploring all possible paths
+                Repeats process until the goal node is reached
+                Uses heuristic estimates to reduce search time and guide traversal efficiently
+        
+            Limitations:
+                1)does not guarrantee shortest path or most optimal solution
+
+                2)Can get trapped in local optima
+
+                3)Requires a suitable heuristic function,can increase complexity
+
+                4)May fail in highly complex or cyclec search spaces without additional handling mechanisms
+    
+    Local Search Algorithms:
+        optimisation techniques that improve a solution by repeatedly moving to a better neighbouring state instead of exploring every path
+
+        Terminologies:
+            1)State - a possible solution
+
+            2)Current State - solution currently being evaluated
+
+            3)Neighbour State - A solutioni formed by making small changes to the current state
+
+            4)Objective state - A function used to measure the quality of a solution 
+
+            5)Local Optimum - best solution among nearby states
+
+            6)Global Optimum - best possible solution in the entire search space
+        
+        Working:
+            1)Initial state selected , often random or based on a rule
+
+            2) Find the neighbours, are similar solutions by making small changes to the current state
+
+            3)Compare the neighbours to see if any are better than current state
+
+            4)Move if a better neighbour exists
+
+            5)keep searching from the new point until no neighbours are a better state
+        
+        Hill Climbing Search:
+            a simple search algorithm that continuously moves toward a better neighboring solution until no solution is possible
+
+        Simulated Annealing:
+            ocassionally accepts worse solutions to escape local optima with the acceptance probability decreasing over time
+            selects worse solutions based on decreasing probability
+
+        Genetic Algorithms:
+            work with a population of solutions and evolve them over time using genetic operators like selection crossover and mutation
+
+        Tabu Search:
+            uses a memory structure called the tabu list to avoid resisting previously explored solutions to prevent cycling back to local optima
+        
+        Beam Search:
+            explores large search spaces by selecting only the most promising nodes at each level instead of expanding every possible path 
+
+            Limitations:
+                May miss the optimal solution if some paths are discrarded in early levels
+                performance dependant on quality if function
+                small beam width can remove potentially useful solutions
+                Large beam width increases computation time 
+
+        
+
+
+
+        
+
+
+            
+
+
+
+
 
 
 
