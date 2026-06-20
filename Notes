@@ -69,40 +69,40 @@ Research for Python AI and Neural Networks
         3)Reinforcement Learning Models
             AI learns by interacting with an environment using rewards and penalties as feedback.Optomising decisions through trial and error
     
-    Agents:
-        Agents operate with a degree of autonomy to completeassigned tasks effectively
-        
-        Features
-            1)Autonomous
-                Act without constant human input and decide next steps using past data
+Agents:
+    Agents operate with a degree of autonomy to completeassigned tasks effectively
+    
+    Features
+        1)Autonomous
+            Act without constant human input and decide next steps using past data
             
-            2)Goal Driven
-                optomise for defined objectives
-            
-            3)Perceptive
-                gather info from sensors , inputs or APIs 
-            
-            4)Adaptable
-                Adjust strategies when situations change
-            
-            5)Collaborative
-                works with hymans or other agents toward shared goals
+        2)Goal Driven
+            optomise for defined objectives
 
-        Classification:
-            1)Reactive
-                respond to stimulo without foresight or planning
+        3)Perceptive
+            gather info from sensors , inputs or APIs 
             
-            2)Proactive
-                Anticipate future states and plan actions to achieve long term goals
+        4)Adaptable
+            Adjust strategies when situations change
             
-            3)Single Agent
-                one agent to solve a problem independently
+        5)Collaborative
+            works with hymans or other agents toward shared goals
+
+    Classification:
+        1)Reactive
+            respond to stimulo without foresight or planning
             
-            4)Multi Agent
-                multiple agents interact coordinate or compete to achieve goals
+        2)Proactive
+            Anticipate future states and plan actions to achieve long term goals
+        
+        3)Single Agent
+            one agent to solve a problem independently
+        
+         4)Multi Agent
+            multiple agents interact coordinate or compete to achieve goals
             
-            5)Rational Agents
-                Choose actions to maximize expected outcomes
+        5)Rational Agents
+            Choose actions to maximize expected outcomes
 
 
 
