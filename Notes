@@ -601,47 +601,51 @@ Problem Solving:
                 3)Markov Decision Processes
                     model decision making under uncertainty through states and rewards etc
                 
-            Frameworks:
-                1)Dempster shafer theory
-                    generalised probability by modeling degrees of belief
-                
-                2)Belief Networks
-                    extend bayesian networks by allowing imprecise probabilities 
-                
-                3)Case Based Reasoning
-                    solving problems by refrencing previous cases
-                
-                
+        Frameworks:
+            1)Dempster shafer theory
+                generalised probability by modeling degrees of belief
+                improve methods such as bayesian probability as can handle uncertainty
 
-
+                Concepts:
+                    1)Frame of discernment
+                        the set of all possible outcomes in a situation
+                    
+                    2)Basic probability assignment
+                        assigns belief to subsets of the FOD not indivisual elements
+                    
+                    3)Belief Plausibility and Doubt
+                        Belief
+                            represents confidence in a hypothesis based on the evidence
                         
+                        Plausibility
+                            how likely a hypothesis might still be true
+                            
+                        Doubt
+                            reflects uncertainty about a hypothesis(how likely to be false)
+                        
+                    4)Dempsters Rule of Combination
+                        combines multiple sources of evidence into a single belief
 
+            2)Belief Networks
+                extend bayesian networks by allowing imprecise probabilities 
+                
+            3)Case Based Reasoning
+                solving problems by refrencing previous cases
 
+        Probabalistic Reasoning:
+            Uses probabalistic reasoning tp manage and model uncertainty in decision making
+            givws probabilities to different possibilities
 
-
-        
-
-        
-
-
-
-        
-
-
+            Bayes Theorem:
+                update beliefs when new information is recieved by using a formula
             
+            Types:
+                Bayesian
+                Markov
+                Hidden Markov
+                Markov decision processes
 
-
-
-
-
-
-
-
-
-
-
-
-
+Types of Learning
 
 
 Projects to Complete:
