@@ -645,7 +645,36 @@ Problem Solving:
                 Hidden Markov
                 Markov decision processes
 
-Types of Learning
+Types of Learning:
+    Supervised:
+        a model learns from labelled data meaning each input has a correct output
+        it compares predictions with results and improves over time to increase accuracy of predictions
+
+        Types:
+            1)Linear Regression
+                predicts continuos values assuminh there is a linear relationship between input and output
+            
+            2)Logistic Regression
+                predicts binary output variable
+            
+            3)Decision trees
+                uses tree where each node is a decition and each leaf is an outcome
+            
+            4)Random Forrest
+                combines decision trees 
+            
+            5)Support Vector Machine
+                seperated data into classes using a boumdary
+            
+            6)K-Nearest Neighbours
+                predicts based off of closest data points
+            
+            7)Gradiemt Boosting
+                corrects errors of previous models to improve
+            
+            8)Naive Bayes
+                uses Baues theorem assuming features are independant
+
 
 
 Projects to Complete:
