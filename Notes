@@ -1057,8 +1057,134 @@ Types of Learning:
                 
                 Multilayer made of layers of dingle neutrons 
                 uses forward  propogation and a lossfunction and back propogation
+            
+            Artificial Neural Networks
+                1)initialize weights and bias
+
+                2)Feed input data
+
+                3)Forward propogation
+
+                4)Calculate Error
+
+                5)Backpropagation
+
+                6)Repeat
+
+                7)Test the networks
     
     Probabalistic Models
+        consider the uncertainty of real world data to make predictions based on distributions rather than absolute values.
+
+        aim to learn patterns from data and make predictions on new unseen data,allow uncertainty to be modeled into a new set of adata
+
+        Categories:
+            1)Generative
+                model joint distribution of input and output to generate new data based on the original dataset
+
+            2)Discriminative
+                models conditional distribution of the output variable given the input.learn a decision boundary that seperates different classes of the output variable
+
+            3)Graphical
+                graphical models that show the conditional dependence
+        
+        Naive Bayes
+            as before ,used for classifying problems
+        
+        Monte Carlo Simulation
+            a method to predict and understand the behavioural systems involving uncertainty
+            simulates random inputs to estimate outcomes and their probabilities
+
+            How:
+                1)define the problem
+                    identify the system or process to simulate
+                
+                2)Model inputs
+                    choose probability distributions to represent the problem
+                
+                3)Run Simulations
+                    generate inputs and record outputs to determine probabilities of outcomes
+                
+                4)Analyze results
+                    look at distribution of results to determin expected outcomes
+            
+        Expectation Maximization algorithm:
+            an iterative optimization technique used to estimate unknown paramaters in probabalistic models
+
+            E-step
+                using the current parameter estimates ,calculate expected values of missing or hidden variables
+            
+            M-step
+                updated expectations from the estep then re estimates the model parameters
+
+            Key Concepts:
+                1)latent variables
+                    variables that arent directly observed but are inferred from the data
+
+                2)Likelihood
+                    probability of the observed data given a set of model parameteers
+
+                3)Maximum Likelihood Estimation
+                        an approach to estimating parameters by choosing values that maximze the likelihood of observing the data
+
+                4)Log Likelihood
+                    the natural logarithms of the likelihood functions
+
+                5)Posterior probability
+                    in bayesian inference, this represents the probabilty of parameters given the data and prior knowledge
+
+                6)Convergence
+                    stopping criterion for the process,EM converge when updates to parameters 
+    
+    Generative AI
+        Large Language Models
+            advanced AI systems built to process understand and generate human text
+
+            Workings:
+                Input Embeddings
+                    converting text into numerical vectors
+                
+                Positional Encoding
+                    Adding sequence information
+                
+                Self Attention
+                    understanding between words and context
+                
+                Feed Forward Layers
+                    Captures complex patterns
+                
+                Decoding
+                    generates responses
+                
+                Multi Head Attention
+                    Parallel reasoning over multiple relationships
+        
+        Generative Pre trained transformer
+            a ;anguage model that understands human like text. it learns patterns and relationshps of words from large data
+
+            uses pre trainging then fine tuning to get the end result
+        
+        Bidirectional encoder representations from transformers
+            bert alayzes text in both directions  to recognize context
+
+            pre trained  using unlabeled text to learn representations of words based on surrounding context
+
+            Workflow:
+                uses a encoder to process input text and generate representations for each token
+            
+            Masked Language Model
+                some words of the input are masked and the model learns to predict these missing worrds using the surrounding context
+
+            Next sentence Prediction
+                understand the relationship between two sentences by predicting whether one sentence follows another
+            
+            Bert uses both MLM and NSP
+
+            bert is then fine tuned on labeled data to adatpt to specific tasks
+        
+        Text to text transfer transformer
+            treats every NLP task as a text to text problem
+            formulates encodes decodes and learns in that order to process the information of the inputs
 
 
 
