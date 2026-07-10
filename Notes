@@ -829,9 +829,246 @@ Types of Learning:
             assessing performance is difficult due to limited labeled data
     
     Unsupervised:
+        model works without labelled data learning patterns without human input(labels or preidentified patterns)
+
+        Types:
+            1)Clustering
+                groups unlabeled data into clusters of similarity in order to find patterns relationships without prior knowledge
+
+                K means clustering
+                    group into clusters by applying KNN where k represents the number of groups we can classify into
+
+                    steps:
+                        Initialisation
+                            (selecting cluster centroids)
+                        
+                        Assignment Step
+                            data points assigned to centroids to cluster
+                        
+                        Update
+                            recalculate the centroids
+                        
+                        Repeat
+                            repeat until centroids dont change
+                
+                Density based clustering:
+                    DBSCAN groups data points closely packed togehter and marks outliers as noise
+
+                    Paramaters:
+                        1)eps
+                            radius of neighbourhood around a point(if less than or equal to eps then points considered neighbourly)
+                            analyze k-distance 
+                        
+                        2)MinPts
+                            minimum points required within eps radius to form a dense region
+
+            2)Association Rule Learning
+                rule based learning in form of if then rules
+
+                Hierarchical
+                    groups into a tree structure
+                    
+                    Dendrogram
+                        family tree of clusters
+                        shows how points or subgroups merge together into different groups
+                    
+                    Types:
+                        Agglomerative
+                            bottom up approach(point to sub to group)
+                        
+                        Divisive
+                            top down(Group to sub to point)
+                        
+                    Methods:
+                        for grouping clusters diff  methods:
+                            Min
+                                the minimum distance between any two points of the cluster
+                            
+                            Max
+                                the maximum distance between any two points of the cluster
+                            
+                            Group Average
+                                average distance between points
+                            
+                            Wards
+                                similarity of two clusters based on increase in squared error when merged
+
+            3)Dimensionality Reduction
+                decreasing the number of features or variables in a dataset while retaining as much og info as possible
+
+                Principality component analysis:
+                    PCA reduces features in a dataset by correlating the most important information or overarching into a different dataset
+
+                    (very cool uses eigenvectors and values)
+    
+    Reinforcement Learning: 
+        learning through trial and errir to maximize cumulative rewards
+        requires a feedback loop through rewards and penalties for learning by using a weighted mean to calculate optimum outputs.
+
+        Components:
+            1)Policy
+                agents behaviour(states for actions)
+            
+            2)Reward Signal
+                guides agents by providing feedback 
+            
+            3)Value function 
+                evaluate long term goals to immediate rewards(higher desireability to do well in later stages etc)
+
+            4)Model
+                simulation of the environment and its predit=ctions
+        
+        Q-Learning:
+            popular model,learns through interactions with environment learning purely from experience 
+
+            Components:
+                1)Q values
+                    the expected rewards for moving to a specific state through action
+                
+                2)Rewards
+                    move through state recieving rewards until reaching a terminal state
+                    (FSM)
+                
+                3)Temporal Difference
+                    agent updates using a formula involving the 
+                    
+                    current state
+                    
+                    next state 
+                    
+                    action taken next best 
+                    
+                    action reward recieved for action
+                    
+                    gamma - discount acting to balance immediate and future rewards
+
+                    alpha - learning rate(how fast old Q values are changing)
+                
+                4)epsilon greedy policy(exploration vs exploitation)
+                    decides which  action to take based on current Q estimates
+
+                    Exploitation
+                        highest Q with 1- epsilon
+                    
+                    Exploration
+                        probability epsilon
+            
+            Determination of Q:
+                1)Temporal difference
+                    comparing values between states and actions with previous actions and states to learn
+                
+                2)Bellmans equations#   recursive formula used to calculate value of a given state
+
+        Deep Q Learning:
+            uses deep learning when states is very large ie(large scope to effect of actions resulting in many possibilities)
+
+            Architecture:
+                Network - aproximates q value 
+                
+                Experience replay - store past experiences in replay buffer sample from this during training
+
+                Target Network - a seperate target network holding the paramaters theta minus used to compute the target Q values
+    
+    Deep Learning:
+        the learning through mimicry of the human brain through neural networks to autonomously gain intelligence
+
+        Deep learning is a type of machine learning
+
+        Neural Networks:
+            layers of nodes collaborating to process raw input data
+            flows through multiple layers of neurons where each neuron applies a transformation
+
+            Components:
+                1)Input layer
+                    recieving information
+                
+                2)Hidden Layers
+                    process data recieved
+                
+                3)output
+                    decision prediction made to input
+
+            Backpropogation
+                if a result ended in a positive or negative, the actions taken to reach the state gain a negative or positive weight depending on the outcome
+
+            Neurons:
+                different neurons relate to different layers
+                works similar to a real neuron with inputs a function an activation function and an output
+                
+
+            Types:
+                1)feedforward
+                    data flows linearly from input to output
+                        , no loops or feedback involved
+                    
+                    activation functions enable the learning of more complext data patterns:
+                        Sigmoid , Tanh , ReLU
+                
+                2)Convolutional
+                    use layers to detect spatial hierarchies 
+
+                    Components not in others:
+                        CNN runs on covents which is a sequence of layer transforms of differentiable functions
+
+                        Convolutional Layer:
+                            extracts important features applying filters(kernels) to compute dot product between filter weights and image patches to create maps
+                        
+                        Pooling
+                            reduces the spatial dimensions of feature maps 
+                        
+                        Flattening
+                            converts multidimensional feature maps into one dimensional vector
+                
+                3)Recurrent
+                    process sequential data ,use loops o retain information over time
+
+                    Components:
+                        Recurrent Neurons
+                            hold a state that remembers previous inputs in sequence(stack/queue)allowing dependancy across time
+                        
+                        Unfolding
+                            expanding the recurrent structure 
+
+                4)generative Adversial
+                    a generator and discriminator network that compete to create data
+                
+                5)AutoEncoders
+                    unsupervised that learn efficient data encodings through compression of input into latent and reconstruction
+                
+                6)transformer
+                    natural language processing with self attention mechanisms
+
+                7)Radial Basis Function
+                    work with data that can be modelled on a cirular or maps to a radial basis function
+                
+                8)Long Short Term
+                    improved RNN capturing long term dependencies in sequential data
+                
+                    uses a forget gate to determine which information should be removed from memory
+
+                9)Gated Recurrent Unit
+                    reduces complexity when solving sequential data,simplified LSTMs
+
+                    discard irrelevant information
+
+            Perceptron
+                a single layer perceptron in a single neuton
+                    recieve input , process and decide to activate or not then send oujtput to next neuron or system
+                
+                Multilayer made of layers of dingle neutrons 
+                uses forward  propogation and a lossfunction and back propogation
+    
+    Probabalistic Models
 
 
 
 
+
+            
+
+        
+                
+
+    
 Projects to Complete:
 https://www.geeksforgeeks.org/artificial-intelligence/best-artificial-intelligence-project-ideas/
