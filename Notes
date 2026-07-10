@@ -814,8 +814,7 @@ Types of Learning:
                 two models trained on different feature subsets of data model labels unlabeled data for the other (peer learning)
             
             MultiView
-                a variation of cotraining where models train on different daata representations to predict the same outputs
-            
+                a variation of cotraining where models train on different daata representations to predict the same outputs    
             Graph based
                 data represented as nodes on graph and esges as imilarities of data points
                 labels propatgated from labeled nodes to unlabeled ones based on graph connectivity
