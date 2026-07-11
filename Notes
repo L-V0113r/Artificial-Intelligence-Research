@@ -1186,15 +1186,17 @@ Types of Learning:
             treats every NLP task as a text to text problem
             formulates encodes decodes and learns in that order to process the information of the inputs
 
-
-
-
-
-            
-
+Libraries:
+    nltk:
+        https://www.nltk.org/book/
         
-                
+        the natural language toolkit
+        classifies tokenises stemms taggs and parses and semantic reasoning functionalities
 
+        all specific research for the library is carried out in the library research folder
     
 Projects to Complete:
+
 https://www.geeksforgeeks.org/artificial-intelligence/best-artificial-intelligence-project-ideas/
+
+Project one - Chatbot
