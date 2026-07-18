@@ -113,3 +113,6 @@ def lexical_richness(text):
 def percentage_of_word(count, total):
     return (count / total) * 100
 
+####Texts as lists of words
+
+
