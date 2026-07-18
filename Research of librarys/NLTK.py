@@ -114,5 +114,142 @@ def percentage_of_word(count, total):
     return (count / total) * 100
 
 ####Texts as lists of words
+    #basic python strings as lists of words etc
+
+#slicing
+    #using a (numb:numb) can give a range between two numbers in a list of words
+    #can omit the first or last number depending on when it appears in the list
+
+####Computing with language:Statistics!!!!
+
+##Frequency Distribution
+    ##frequency distriibution is the number of times a thing has occured
+
+#fdist = FreqDist(text1)
+
+##this produces an object that can be used to analyze the frequency distribution in a text
+
+#fdist.most_common(50)
+
+##this shows the 50 most common words in a text
+
+#fdist.hapaxes()
+
+###this shows the words that only occur once in a text
+
+##Fine Grained selection of words
+    ##this section describes how to select words based on their length and frequency of occurance
+
+##using the word equivalent for set notation once the text is turned into a set filters can be applied to recieve certaint things
+
+##Collocations and bigrams
+    ##collocations are a sequence of words that occur together unusually often
+    #bigrams are a sequence of word pairs
+
+    #bigrams can be an object that can be used to analyze the frequency of word pairs in a text
+
+#list(bigrams[list1])
+
+#this shows the bigrams of a list of words
+
+#collocations are frequent bigrams
+
+##counting other things
+
+# def word_Lengths_Distributions(text):
+#     Lengths =[len(word) for word in text]
+#     fdist = FreqDist(Lengths)
+#     return fdist
+
+##this returns the frequency of word lengths in a text
+
+############Frequency distribution commands
+
+# fdist = FreqDist(text1)
+
+# fdist[text1] += 1
+# #this increments the count of a word in the frequency distribution
+
+# fdist["word"]
+# #this returns the count of number of times a given sample occured
+
+# fdist.freq("word")
+# #frequency of a given sample
+
+# fdist.N()
+# #the total number of samples
+
+# fdist.most_common(n)
+# #returns the n most common samples and thier freq
+# #can also iterate over the samples
+
+# fdist.max()
+# #sample with the highest frequency
+
+# fdist.tabulate()
+# #tabulates which is when the frequency distribution is displayed in a table format
+
+# fdist.plot()
+# fdist.plot(cumulative=True)#the cumulative plot version
+# #plots the frequency distribution in a graph format
+
+# fdist1 |= fdist2
+# #combines two frequency distributions into one including the counts of each sample
+
+# fdist1 < fdist2
+# #determines if 1 is a subset of 2 which would mean samples occur les frequently in 1 than 2
 
 
+###Word comparison operators
+
+# s.startswith(t)
+# s.endswith(t)
+# #determines if a variable s ends or starts with a variable t
+
+# t in s
+# #determines if a variable t is in a variable s
+
+# s.islower
+# s.isupper
+# #determines if char contained in s are all upper or all lower not mix
+
+# s.isaplpha
+# s.isalnum
+# s.isdifit
+# #determins if s isnt empty and all char are alphabetic , alphanumeric or digits
+
+# s.istitle
+# #are all words capitalised
+
+#####Automatic NL understanding
+
+##word sense disambiguation
+    ##which sense a word was intended to give due to the contenxt ie which meaning of the word is implied by the surrounding
+
+##Pronoun Resolution
+    ##detecting the subjects and objects of verbs,what words imply based off of previous context ie theat bob is now him
+    #find the antecedent to identify how a noun relates to the verb
+
+##General Language output
+    ##understanding of the pronouns in different language is required as they have different subsequent inferences depending on tense etc
+
+##Machine translation
+    #repeated translation is difficult due to the possible translations of words between languages
+    #use text alignment
+
+##Spoken Dialog systems
+    ##Turing test,can a system reponding to a user perform naturally enough so that we cannot distinguish it
+    
+##simple Pipeline
+
+#Phoneology => morphology => syntax => semantics => reasoning
+
+#each step requires analysis and realisation aswell as a database/model to learn/utilise for generation/answering
+
+##Textural entailment
+    #how can you determine when a hypothesis can be deemed true or false and how do you determine from your source whether a hypothesis is true
+
+##Limitations
+    ##cannot perform reaoning or draw from real world knowledge
+
+##################################################################################################################################################
